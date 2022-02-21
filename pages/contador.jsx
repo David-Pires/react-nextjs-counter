@@ -1,19 +1,24 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function contador() {
-  const [numero, setNumero] = useState(0)
+  const [numero, setNumero] = useState(0);
 
-  const decrement = () => setNumero(numero--)
-  
-  const increment = () => setNumero(numero++)
-  
+  const decrement = () => setNumero(numero--);
+
+  {
+    /* 
+    const increment = 
+
+  */
+  }
 
   return (
     <div>
       <h1>Contador</h1>
       <div>Valores: {numero}</div>
       <button onClick={decrement}>-</button>
-      <button onClick={increment}>+</button>
+      {/*This is another exemple*/}
+      <button onClick={() => setNumero(numero++)}>+</button>
     </div>
   );
 }
@@ -28,6 +33,7 @@ export default function contador() {
 //   function decrement() {
 //     setNumero(numero--)
 //   }
+
 //   return (
 //     <div>
 //       <h1>Contador</h1>
@@ -37,3 +43,9 @@ export default function contador() {
 //     </div>
 //   );
 // }
+
+//----------------------------------------------
+// const decrement = () => setNumero(numero--)
+
+// const increment = () => setNumero(numero++)
+//-----------------------------------------------
