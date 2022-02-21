@@ -2,12 +2,12 @@ import { useState } from 'react';
 
 export default function contador() {
   const [numero, setNumero] = useState(0)
-  function decrement() {
-    setNumero(numero--)
-  }
-  function increment() {
-    setNumero(numero++)
-  }
+
+  const decrement = () => setNumero(numero--)
+  
+  const increment = () => setNumero(numero++)
+  
+
   return (
     <div>
       <h1>Contador</h1>
